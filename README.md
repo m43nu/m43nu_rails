@@ -1,16 +1,16 @@
-# Blueberry Rails [![Build Status](https://secure.travis-ci.org/blueberryapps/blueberry_rails.png?branch=master)](http://travis-ci.org/blueberryapps/blueberry_rails)
+# M43nu Rails [![Build Status](https://secure.travis-ci.org/m43nu/m43nu_rails.png?branch=master)](http://travis-ci.org/m43nu/m43nu_rails)
 
-A Rails application template used at Blueberry Apps.
+A Rails application template used at m43nu.ch
 
 ## Installation
 
 Install the gem:
 
-    $ gem install blueberry_rails
+    $ gem install m43nu_rails
 
 Then you can run
 
-    $ blueberry_rails newproject
+    $ m43nu_rails newproject
 
 ### Available options
 
@@ -26,13 +26,9 @@ Devise model
 
     --devise_model User
 
-Use Gulp instead of Asset Pipeline
-
-    --gulp
-
 ## Gems
 
-Blueberry Rails template contains following gems by default:
+M43nu Rails template contains following gems by default:
 
 * [Better Errors](https://github.com/charliesome/better_errors) for better error pages
 * [dotenv](https://github.com/bkeepers/dotenv) for server-side configuration
@@ -40,7 +36,7 @@ Blueberry Rails template contains following gems by default:
 * [New Relic RPM](https://github.com/newrelic/rpm) for performance monitoring
 * [Mailcatcher](http://mailcatcher.me/) for testing & viewing emails
 * [PostgreSQL driver (pg)](https://github.com/ged/ruby-pg)
-* [slim](http://slim-lang.com/) for templates
+* [haml](http://haml.info/) for templates
 * [simple_form](https://github.com/plataformatec/simple_form) for better & easier forms
 
 Testing related:
@@ -59,7 +55,7 @@ Additional articles
 
 ### Usage
 
-    $ blueberry_rails newproject --gulp
+    $ m43nu_rails newproject
     $ npm install
 
 Default Gulp task, compiles stylesheets/javascripts and starts BrowserSync (for frontend dev)
@@ -97,14 +93,14 @@ Remove all assets
 ## Other great stuff
 
 * Do not secret token in the repo - load it via ENV variable
-* Default Slim application layout
+* Default Haml application layout
 * Generates User model by default (via devise)
 * Partial for displaying flash messages in the default layout
 
 ## Credits
 
-Based on [suspenders](https://github.com/thoughtbot/suspenders/blob/master/README.md)
-gem by [thoughtbot](http://thoughtbot.com/community).
+Based on [blueberry_rails](https://github.com/blueberry/blueberry_rails/blob/master/README.md)
+gem by [Blueberry Apps](http://www.blueberryapps.com/en).
 
 ## Contributing
 
