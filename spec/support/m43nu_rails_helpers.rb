@@ -1,6 +1,6 @@
 require 'fileutils'
 
-module BlueberryRailsHelpers
+module M43nuRailsHelpers
   APP_NAME = 'test_project'
 
   def remove_project_directory
@@ -8,7 +8,7 @@ module BlueberryRailsHelpers
   end
 
   def create_project(options = nil)
-    cmd "#{blueberry_rails_bin} #{APP_NAME} #{options}"
+    cmd "#{m43nu_rails_bin} #{APP_NAME} #{options}"
   end
 
   def run_rake
@@ -28,8 +28,8 @@ module BlueberryRailsHelpers
     @project_path ||= Pathname.new("#{root_path}/#{APP_NAME}")
   end
 
-  def blueberry_rails_bin
-    File.join(root_path, 'bin', 'blueberry_rails')
+  def m43nu_rails_bin
+    File.join(root_path, 'bin', 'm43nu_rails')
   end
 
   def root_path

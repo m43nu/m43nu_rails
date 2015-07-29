@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '<%= BlueberryRails::RUBY_VERSION %>'
+ruby '<%= M43nuRails::RUBY_VERSION %>'
 
 gem 'airbrake'
 <% if !options[:gulp] -%>
@@ -17,12 +17,13 @@ gem 'dotenv-rails'
 gem 'flutie'
 gem 'jquery-rails'
 gem 'pg'
-gem 'rails', '~> <%= BlueberryRails::RAILS_VERSION %>'
+gem 'rails', '~> <%= M43nuRails::RAILS_VERSION %>'
 gem 'sass-rails', '~> 5.0'
 gem 'simple_form'
-gem 'slim-rails'
+gem 'haml-rails'
 gem 'uglifier', '>= 1.3.0'
 gem 'unicorn'
+gem 'sprockets', '2.11.0'
 
 group :development do
   gem 'awesome_print'

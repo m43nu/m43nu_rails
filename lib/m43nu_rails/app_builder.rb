@@ -1,7 +1,7 @@
-module BlueberryRails
+module M43nuRails
   class AppBuilder < Rails::AppBuilder
 
-    include BlueberryRails::ActionHelpers
+    include M43nuRails::ActionHelpers
 
     def readme
       template 'README.md.erb', 'README.md'
@@ -51,12 +51,12 @@ module BlueberryRails
     end
 
     def create_shared_flashes
-      copy_file '_flashes.html.slim', 'app/views/application/_flashes.html.slim'
+      copy_file '_flashes.html.haml', 'app/views/application/_flashes.html.haml'
     end
 
     def create_application_layout
       remove_file 'app/views/layouts/application.html.erb'
-      copy_file 'layout.html.slim', 'app/views/layouts/application.html.slim'
+      copy_file 'layout.html.haml', 'app/views/layouts/application.html.haml'
     end
 
     def create_pryrc

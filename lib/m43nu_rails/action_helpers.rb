@@ -1,4 +1,4 @@
-module BlueberryRails
+module M43nuRails
   module ActionHelpers
 
     def action_mailer_host(rails_env, host)

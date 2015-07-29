@@ -1,8 +1,8 @@
 require 'minitest/autorun'
-require './spec/support/blueberry_rails_helpers.rb'
+require './spec/support/m43nu_rails_helpers.rb'
 
-class BlueberryRailsTest < Minitest::Test
-  include BlueberryRailsHelpers
+class M43nuRailsTest < Minitest::Test
+  include M43nuRailsHelpers
 
   def setup
     remove_project_directory

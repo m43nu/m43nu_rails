@@ -1,7 +1,7 @@
 require 'rails/generators'
 require 'rails/generators/rails/app/app_generator'
 
-module BlueberryRails
+module M43nuRails
   class AppGenerator < Rails::Generators::AppGenerator
 
     class_option :database, type: :string, aliases: '-d', default: 'postgresql',
@@ -29,18 +29,18 @@ module BlueberryRails
     class_option :skip_bundle, type: :boolean, aliases: "-B", default: true,
       desc: "Don't run bundle install"
 
-    class_option :gulp, type: :boolean, aliases: '-g', default: false,
+    class_option :gulp, type: :boolean, aliases: '-g', default: true,
       desc: 'Include Gulp asset pipeline'
 
     class_option :capistrano, type: :boolean, aliases: '-c', default: false,
       desc: 'Include Capistrano'
 
     def finish_template
-      invoke :blueberry_customization
+      invoke :m43nu_customization
       super
     end
 
-    def blueberry_customization
+    def m43nu_customization
       invoke :customize_gemfile
       invoke :setup_database
       invoke :setup_development_environment
@@ -144,7 +144,7 @@ module BlueberryRails
     protected
 
     def get_builder_class
-      BlueberryRails::AppBuilder
+      M43nuRails::AppBuilder
     end
   end
 end
