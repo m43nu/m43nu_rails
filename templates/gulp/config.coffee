@@ -3,6 +3,7 @@ sourceFiles   = './gulp/assets'
 
 module.exports =
   publicAssets: publicAssets
+  sourceFiles: sourceFiles
 
   browserSync:
     proxy: 'localhost:3000'
@@ -19,6 +20,11 @@ module.exports =
   images:
     src: sourceFiles + '/images/**'
     dest: publicAssets + '/images'
+
+  sprites:
+    watch: sourceFiles + '/sprites/*/*.png'
+    src: sourceFiles + '/sprites'
+    dest: publicAssets
 
   fontIcons:
     name: 'Font Icons'

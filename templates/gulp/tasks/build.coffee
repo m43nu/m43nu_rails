@@ -4,7 +4,7 @@ gulpSequence  = require 'gulp-sequence'
 gulp.task 'build', (cb) ->
   tasks = [
     'clean'
-    [ 'fontIcons', 'images' ]
+    [ 'sprites', 'fontIcons', 'images' ]
     [ 'sass:production', 'browserify' ]
   ]
 
@@ -17,7 +17,7 @@ gulp.task 'build', (cb) ->
 gulp.task 'development', (cb) ->
   tasks = [
     'clean'
-    [ 'fontIcons', 'images' ]
+    [ 'sprites', 'fontIcons', 'images' ]
     [ 'sass', 'browserify' ]
   ]
 

@@ -12,3 +12,5 @@ gulp.task 'watch', [ 'watchify', 'browserSync' ], (callback) ->
     gulp.start 'sass'
   watch config.images.src, ->
     gulp.start 'images'
+  watch config.sprites.watch,  ->
+    gulp.start 'sprites'
